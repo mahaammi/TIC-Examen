@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Projet HTML</title>
+        <link rel="shortcut icon" href="icones/usthb.png" >
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <page>
+            <nav>
+                <img class="logo" src="icones/usthb.png" />
+                <ul>
+                    <li class="menu"><a href="acceuil.html">Acceuil</a></li>
+                    <li class="menu">
+                        <a href="#">Résumer TIC</a>
+                        <ul class="anti-menu">
+                            <li><a href="chapitre1.html">Chapitre 1</a></li>
+                            <li><a href="chapitre2.html">Chapitre 2</a></li>
+                            <li><a href="chapitre3.html">Chapitre 3</a></li>
+                            <li><a href="chapitre4.html">Chapitre 4</a></li>
+                            <li><a href="chapitre5.html">Chapitre 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="equipe.html">Equipe</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2 id="headline">Chapitre 5</h2>
+                <ul>
+                    <ol id="num">
+                        <li>
+                            <h3 id="subHeadline">Qu`est ce que Git et a quoi il sert ? : </h3>
+                        </li>
+                        <p id="text">
+                            Git est un logiciel de versioning qui permet de sauvegarder les changements effectuées
+                            sur un projet ce qui facilite la gestion de ces dernier car il rend la coordination du travail
+                            entre plusieurs personne possible et simple . 
+                        </p>
+                        <li>
+                            <h3 id="subHeadline">Les deux modèle des logiciels de gestion de version : </h3>
+                        </li>
+                        <p id="text">
+                            Le modèle de gestion sont soit construit sur le modèle centralisé qui consiste à la
+                            centralisation du code source et les différents utilisateur doivent se connecter sur ce
+                            serveur , ou bien le modèle de distribué où chaque utilisateur doit télécharger et héberger
+                            l`intégralité du code sur sa propre machine . Git utilise le modèle distribué car c`est
+                            simple , manipulable et plus sécurisé .                             
+                        </p>
+                        <li>
+                            <h3 id="subHeadline">Utiliser Git : ligne de commande, console et interface graphique et son installation : </h3>
+                        </li>
+                        <p id="text">
+                            on utilise la console ( langage de commande) pour installer et utiliser Git et pour l`installer la
+                            manière la plus simple est télécharger la dernière version sur ce site :                              
+                            <a href="http://git-scm.com/downloads ">http://git-scm.com/downloads</a>
+                        </p>
+                        <li>
+                            <h3 id="subHeadline">Paramétrage de Git : </h3>
+                        </li>
+                        <p id="text">
+                            Pour paramétrer Git, tu dois configurer ton nom d`utilisateur et ton adresse e-mail en
+                            utilisant les commandes «
+                            <span id="textColor">
+                                git config –global user.name 'ton nom d`utilisateur'
+                            </span>
+                            <span>» et «</span>
+                            <span id="textColor">
+                                git config –global user.e-mail 'ton adresse e-mail'
+                            </span>
+                            <span>»</span>
+                        </p>
+                        <li>
+                            <h3 id="subHeadline">Démarrer un dépôt Git : 
+                            </h3>
+                        </li>
+                        <p id="text">
+                            Un dépôt reflète la copie d`un fichier. On peut crée un dépôt Git en le clonant d`un autre
+                            dépôt ou en important un répertoire déjà existant
+                        </p>     
+                        <li>
+                            <h3 id="subHeadline">La gestion des informations selon Git :    </h3>
+                        </li>
+                        <p id="text">
+                            Git considère différemment les donner où il pense à la manière d`un flux instantané ,
+                            chaque instantané est stocké dans une base de donné locale . 
+                        </p>      
+                        <li>
+                            <h3 id="subHeadline">Les états des fichiers : </h3>
+                        </li>
+                        <p id="text">
+                            Un fichier peut avoir deux grands états dans Git : suivie, non suivie. Si il est enregistré en
+                            base alors le fichier est suivie et celui qui n`as pas été indexé n`est pas suivie. Les fichiers
+                            suivie peuvent avoir trois états : modifié, indexé , validé . 
+                        </p>    
+                        <li>
+                            <h3 id="subHeadline"> Les zones de travail : 
+                            </h3>
+                        </li>
+                        <p id="text">
+                            Les états des fichiers sont liées à des zones de travail dans Git en fonction de son état dont
+                            tout projet Git est composé de trois sections : le répertoire de travail, la zone d`index et le
+                            répertoire Git.
+                        </p>   
+                        <li>
+                            <h3 id="subHeadline"> Créer un dépôt Git d`un répertoire existant </h3>
+                        </li>
+                        <p id="text">
+                            Pour créer un dépôt Git à partir d`un répertoire existant, tu dois exécuter la commande «
+                            <span id="textColor">
+                                Git int 
+                            </span>»</span> 
+                            dans le terminal du répertoire. Cela initialisera un dépôt Git dans le répertoire et tu pourra
+                            commencer à ajouter des fichiers et des commits. Pour avoir des informations sur l`état des
+                            fichier on utilise «     
+                        <span id="textColor">
+                            Git statuts
+                        </span>
+                        »</span>
+                        et pour les indexer on utilise «
+                        <span id="textColor">
+                            Git add   
+                        </span> »</span> 
+                            et enfin pour les valide et les ajouter en base la commande « 
+                            La seconde manière de démarrer un dépôt Git est de le cloner grâce à la commande « 
+                            git commit
+                        </span> »</span>    
+                            est idéal. 
+                        </p>
+                        <li>
+                            <h3 id="subHeadline"> Cloner un dépôt Git :</h3>
+                        </li>
+                        <p id="text">
+                            La seconde manière de démarrer un dépôt Git est de le cloner grâce à la commande « 
+                        <span id="textColor"> 
+                            Git clone
+                        </span> »</span>
+                        , une fois finis nous pourrons transmettre nos fichier.                                
+                        </p>
+                        <li>
+                            <h3 id="subHeadline">Ajouter, modifier, actualiser notre projet, consulter
+                                l`historique ou annuler les modifications :</h3>
+                        </li>
+                        <p id="text">
+                            Grâce à notre logiciel de gestion de version l`ajout et la modification d`un fichier est
+                            possible, pour cela on va devoir utuliser les commande «
+                        <span id="textColor">  
+                            git add
+                        »</span>
+                         et
+                        <span id="textColor"> 
+                            git commit 
+                        </span> »</span>
+                        une
+                        fois faite la manière la plus simple de consulter l`historique de nos modification est
+                        d`utiliser la commande «
+                        <span id="textColor"> 
+                            Git.log
+                        </span> »</span>
+                        et en cas de regret on pourra annuler les modifications
+                        avec la commande «       
+                        <span id="textColor">
+                            git checkout-nom-du-fichier
+                        </span> »</span>
+                          ou « 
+                          <span id="textColor"> 
+                            Git restore
+                        </span> »</span>.
+                        </p>
+                        <li>
+                            <h3 id="subHeadline">Qu`est ce qu`une branche ? :</h3>
+                        </li>
+                        <p id="text">
+                            Créer une branche c`est créer une copie du projet pour le développer Git a une approche
+                            facile pour crée une branche il suffit simplement de créer un nouveau pointeur. 
+                        </p>     
+                </ol>
+                </ul>
+            </div>
+        </page>
+        <footer>
+            <div class="footerbottom">
+                <p>
+                    Copyright &copy;2023 | Résumer Technique d'information et de communication                
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
+
